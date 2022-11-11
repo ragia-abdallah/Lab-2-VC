@@ -13,3 +13,15 @@ after resetting locally > do: git push --force
 2. checkout desired branch (and get back): git checkout <branch-name>
 3. returning to original branch, pop out stashed updates: git stash pop
 
+> to list tags:
+type: git tag
+or: git tag -l
+or: git tag --list
+
+>  to delete tag locally and remotely:
+- locally:
+git tag -d <tag-name>
+
+- remotely:
+git push --delete origin <tag-name>
+or: git push origin :refs/tags/<tag-name>
