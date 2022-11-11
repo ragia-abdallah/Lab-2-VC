@@ -1,0 +1,10 @@
+> to remove Merge locally and remotely:
+- locally:
+
+1. navigate to branch (git checkout <branch-name>)
+2. get ID of commit before merge (git log)
+3. type: git reset --hard <commit-ID>
+
+- remotely:
+after resetting locally > do: git push --force
+
