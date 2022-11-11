@@ -8,3 +8,8 @@
 - remotely:
 after resetting locally > do: git push --force
 
+> to checkout another branch without commit changes:
+1. stash current branch: git stash
+2. checkout desired branch (and get back): git checkout <branch-name>
+3. returning to original branch, pop out stashed updates: git stash pop
+
